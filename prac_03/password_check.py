@@ -5,10 +5,10 @@ def main():
 
     password = get_password(max_length, min_length)
 
-    asterisks_conversion(password)
+    print_in_asterisks(password)
 
 
-def asterisks_conversion(password):
+def print_in_asterisks(password):
     print("*" * len(password))
 
 
