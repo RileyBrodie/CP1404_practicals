@@ -2,17 +2,17 @@ from random import randint
 
 quick_pick_lines = int(input("How many quick picks? "))
 
-qps = []
-all_quick_picks = []
+QPS = []
+ALL_QUICK_PICKS = []
 
 for num in range(1, quick_pick_lines + 1):
     for i in range(1, 7):
         random_number = (randint(1, 45))
-        while random_number in qps:
+        while random_number in QPS:
             random_number = (randint(1, 45))
-        qps.append(random_number)
-    qps.sort()
-    all_quick_picks.append(qps)
+        QPS.append(random_number)
+    QPS.sort()
+    ALL_QUICK_PICKS.append(QPS)
     print("{:2} {:2} {:2} {:2} {:2} {:2}".format
-          (qps[0], qps[1], qps[2], qps[3], qps[4], qps[5]))
-    qps = []
+          (QPS[0], QPS[1], QPS[2], QPS[3], QPS[4], QPS[5]))
+    QPS = []
