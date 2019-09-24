@@ -14,5 +14,8 @@ for word in words:
     if word_length > max_length:
         max_length = word_length
 
-for word in words:
-    print("{:{}} = {}".format(word, max_length, words[word]))
+words_list = list(words.keys())
+words_list.sort()
+
+for word in words_list:
+    print("{:{}} : {}".format(word, max_length, words[word]))
